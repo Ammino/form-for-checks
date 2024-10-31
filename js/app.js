@@ -1,7 +1,10 @@
 // задаем переменную формы отправки по id
 const formCheck = document.getElementById('js-form')
 // "слушаем" кнопку submit в форме и вызываем функцию обработки
-formCheck.addEventListener('submit', handleFormSubmit)
+
+if (formCheck) {
+	formCheck.addEventListener('submit', handleFormSubmit)
+}
 
 // функция обработки кнопки submit
 function handleFormSubmit(event) {
